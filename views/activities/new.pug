@@ -1,0 +1,9 @@
+extends ../layout
+
+block content
+  a(href="/") Home
+  h1= title
+  form(action="/activities/new", method="post")
+    label Seated Leg Press 
+    input(type="text", name="leg_press_reps", placeholder="Reps")
+    input(type="text", name="leg_press_weight", placeholder="Weight")
